@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Listesi</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+<body>
+    <section style="max-width: 80%;width: 80%;">
+        <h1>TO DO LİSTESİ</h1>
+        <div class="todolist-form">
+            <br>
+            <input class="todo-input" type="text" placeholder="To-Do Liste eklemek istediğin">
+            <br>
+            <span class="input-message"></span>
+            <br><br>
+            <div class="flex align justify-between mobile-flex" style="gap: 10px;">
+                <button class="clear-todolist-button">Listeyi Temizle</button>
+                <input type="search" id="searchInList" placeholder="Listede Bul">
+            </div>
+            <hr>
+            <button class="add-todolist-button">Ekle</button>
+        </div>
+        <div class="todolist-container"></div>
+        <br><br>
+    </section>
+    <script src="/src/js/app.js"></script>
+</body>
+</html>

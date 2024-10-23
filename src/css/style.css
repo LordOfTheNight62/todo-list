@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center; /* Ortala */
+    align-items: center; /* Dikey ortala */
+    min-height: 100vh;
+}
+ul{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 20px 20px 15px #E0E0E0;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 20px;
+}
+ul li:nth-child(odd){
+    background-color: #f8f8f8;
+}
+
+ul li:nth-child(even){
+    background-color: #eaeaea;
+}
+
+input[type=text]{
+    min-height: 40px;
+    width: 100%;
+    border: 3px solid black;
+}
+
+input[type=search]{
+    min-height: 40px;
+    border: 1px solid black;
+}
+
+button{
+    min-width: 50px;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.delete-button{
+    background-color: #E83547;
+    color: white;
+    padding: 5px;
+}
+
+.add-todolist-button{width: 100%;}
+.todolist-form{
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+}
+
+.flex{display: flex;}
+.align{align-items: center;}
+.justify{justify-content: center;}
+.justify-end{justify-content: flex-end;}
+.justify-between{justify-content: space-between;}
+
+#searchInList {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mobile-flex{
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+        align-items: normal;
+        flex-direction: column;
+    }
+}
